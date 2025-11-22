@@ -1,14 +1,14 @@
 :root {
-  --bg: #061126;
-  --panel: #0a1a33;
-  --muted: #b8c8dd;
-  --text: #e8f0fb;
-  --accent: #6ad0ff;
-  --accent-2: #9fb7ff;
-  --border: #12284a;
-  --glow: rgba(106, 208, 255, 0.3);
+  --bg: #080b12;
+  --panel: #0e1320;
+  --muted: #a7b3c8;
+  --text: #e8ecf4;
+  --accent: #7be3ff;
+  --accent-2: #9ff0c5;
+  --border: #192032;
+  --glow: rgba(123, 227, 255, 0.25);
   --radius: 14px;
-  --shadow: 0 20px 60px rgba(2, 10, 26, 0.55);
+  --shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
 }
 
 * {
@@ -41,7 +41,7 @@ main {
   padding: 18px 24px;
   margin: 0 auto;
   max-width: 1100px;
-  background: rgba(7, 16, 34, 0.82);
+  background: rgba(8, 11, 18, 0.8);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
@@ -73,13 +73,13 @@ main {
 
 .logo img,
 .footer-brand img {
-  width: 48px;
-  height: 48px;
-  border-radius: 14px;
-  background: linear-gradient(145deg, rgba(106, 208, 255, 0.18), rgba(159, 183, 255, 0.12));
-  padding: 8px;
-  box-shadow: 0 10px 24px rgba(4, 12, 29, 0.45);
-  border: 1px solid rgba(255, 255, 255, 0.04);
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(123, 227, 255, 0.08);
+  padding: 6px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+  border: 1px solid var(--border);
 }
 
 .logo span,
@@ -354,21 +354,20 @@ label {
 input,
 textarea {
   width: 100%;
-  background: #0c1c36;
+  background: #0b0f1b;
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 12px;
   color: var(--text);
   font-size: 16px;
-  transition: border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
+  transition: border-color 180ms ease, box-shadow 180ms ease;
 }
 
 input:focus,
 textarea:focus {
   outline: none;
   border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(106, 208, 255, 0.25);
-  background: #0f2244;
+  box-shadow: 0 0 0 3px rgba(123, 227, 255, 0.2);
 }
 
 .form-footer {
