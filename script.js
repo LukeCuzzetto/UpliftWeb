@@ -23,12 +23,11 @@ form?.addEventListener('submit', (event) => {
 
   const data = new FormData(form);
   const name = data.get('name');
-  const business = data.get('business');
+  const email = data.get('email');
+  const website = data.get('website');
   const message = data.get('message');
 
-  const body = encodeURIComponent(
-    `Name: ${name}\nBusiness: ${business}\nProject description: ${message}`
-  );
+  const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nWebsite: ${website}\nMessage: ${message}`);
   const subject = encodeURIComponent('Project inquiry from Uplift Web');
 
   window.location.href = `mailto:hello@upliftweb.studio?subject=${subject}&body=${body}`;
